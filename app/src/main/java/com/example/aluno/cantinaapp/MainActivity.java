@@ -2,15 +2,16 @@ package com.example.aluno.cantinaapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
 import android.view.View;
-import android.widget.CheckBox;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button buttSalg;
     private Double salgado = 3.80;
-    private Double checkBox1 = 3.80;
+    private Double toTal;
 
 
     @Override
@@ -26,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 salgado = Double.parseDouble(buttSalg.getText().toString());
+
+                toTal = salgado;
+
+
+
+
 
 
 
